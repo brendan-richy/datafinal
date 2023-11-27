@@ -90,4 +90,18 @@ Console.Writeline(count);
 >>> 0
 ```
 
-[Back to Outline Page](outline.md)
+## Problem to Solve - Edit History
+
+Create and  manipulate a stack in a way that editing or content creation software might do with actions like ctrl+z in mind. Programs like photoshop, blender, or even visual studio code let you undo recent changes to whatever you are working on. These recent actions, or edits that you made are stored in a stack and then access when you decdide to undo your work or go back to an earlier point.
+
+Your task is to:
+
+* Initialize a stack named "actions" then add 5+ actions someone might have taken in a digital manipulation software application.
+* Use `.Peek()` to view the most recent action, store it in a variable and print it to console.
+* Use `.Pop()` to simulate using ctrl+z to undo your most recent action. Store this most recent action in a variable, and print it to console.
+* Then, use `.Count()` to well, obviously count the height of the stack. Print this, and make sure it matches the number of items you added to the stack -1.
+* Lastly, use `.Clear()` to empty the stack completly. Then check your work with `.Count()` again to make sure that it worked.
+
+[Solution](../datafinal\stacks-solution\Program.cs)
+
+[Back to outline](outline.md)
