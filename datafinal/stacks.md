@@ -1,12 +1,46 @@
 # Stacks
 
+## What are they?
+
 Stacks are a type of data structure where the collection of elements is managed by a last in, first out (LIFO) order. This means the last added element to the stack will be the first one removed.
 
 * An example of a stack is a browser's history tab. Browser history tracks all the unique webpages you`ve been to, and a common function in browsers is to want to go back to a previous webpage. When you hit the back arrow in your browser, you are accessing a stack with all your history, and it takes you to the top element in the stack.
 
 * Another example could be using `ctrl+z` in your favorite design software. ctrl+z is the common shortcut for undo. Your actions are organized into a stack and you would want to just undo to a random point. You just want to correct your recent mistake which is what stacks are perfect for.
 
-There are different ways we can use stacks in c#. The first one is ".push()". This will add whatever is in the parentheses to the top of the stack. The `.pop()` function will remove the top item in a stack and return it. If the stack is empty it will throw an error. The `.Peek()` action will observe the object at the top of the stack without removing it. `.Clear()` will obviously empty the stack, and lastly, `.Count()` will return the number of objects in the stack.
+## Creating a Stack
+
+```csharp
+Stack<string> myStack = new Stack<string>();
+
+// <string> represents the data type you will be storing in a stack.
+
+// myStack is the name of your stack. Name it so you can recogniz e it.
+```
+
+## Functions
+
+There are different ways we can use stacks in c#. We will go over the most common ways to use these structures.
+
+`.Push()`
+
+* This will add whatever is in the parentheses to the top of the stack. If we push multiple things to the stack, whatever we added last will be at the top of the stack.
+
+`.Pop()`
+
+* The function will remove the top item in a stack and return it. If the stack is empty it will throw an exception.
+
+`.Peek()`
+
+* Action will observe the object at the top of the stack without removing it. It does not change the stack.
+
+`.Clear()`
+
+* This will empty the stack of all elements.
+
+`.Count()`
+
+* Will return the number of objects in the stack.
 
 ## Practice
 
