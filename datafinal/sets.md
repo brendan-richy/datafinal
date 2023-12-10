@@ -182,6 +182,8 @@ Using the given sets of userA and user B
 * Find users that follow both userA and userB. These are called "mutual followers" and is also an intersection.
 * To practice finding a difference, although there is really no real world use case for followers, find people that follow userA or userB, but not both. You could think of these people as "possible interests" if userA and userB are similarly focused accounts.
 
-[Practice File](../datafinal\sets-solution\Program.cs)
+[Practice file](../datafinal\sets-solution\Program.cs)
+
+[Solution File](../datafinal\stacks-solution\solution\Solution.cs)
 
 [Back to outline](outline.md)
