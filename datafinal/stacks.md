@@ -10,6 +10,8 @@ Stacks are a type of data structure where the collection of elements is managed 
 
 ## Creating a Stack
 
+Using C#, we can create a set as follows.
+
 ```csharp
 Stack<string> myStack = new Stack<string>();
 
@@ -136,6 +138,8 @@ Your task is to:
 * Then, use `.Count()` to well, obviously count the height of the stack. Print this, and make sure it matches the number of items you added to the stack -1.
 * Lastly, use `.Clear()` to empty the stack completly. Then check your work with `.Count()` again to make sure that it worked.
 
-[Solution](../datafinal\stacks-solution\Program.cs)
+[Practice File](../datafinal\stacks-solution\Program.cs)
+
+[Solution](../datafinal\stacks-solution\Solution.cs)
 
 [Back to outline](outline.md)
