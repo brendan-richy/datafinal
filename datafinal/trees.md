@@ -6,7 +6,7 @@ Much like an upside down tree, a binary search tree (BST) organizes data using r
 
 Lets look at an examle of a tree.
 
-![Tree Overview](tree_overview.jpg)
+![Tree Overview](images/tree_overview.jpg)
 
 ### Root Node
 
@@ -24,7 +24,7 @@ Every node in the tree except the root node has a parent. `F` and `J` have a par
 
 Lets take a look at another tree. This one demonstrates the `Left - Right` ordering rule.
 
-![Tree Ordering](tree_ordering.jpg)
+![Tree Ordering](images/tree_ordering.jpg)
 
 ### What is left right ordering?
 
@@ -47,3 +47,5 @@ When a child is `larger` than its parent it will go to the `right` of  the paren
 Even if a parent only has a single child node, `it will still follow the left right` rules.
 
 * 65 is a single child of 60, and its larger so it will go to the right of the parent.
+
+## Lets Make a Tree
