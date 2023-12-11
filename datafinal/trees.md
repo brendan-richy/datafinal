@@ -111,3 +111,46 @@ class Program
     }
 }
 ```
+
+We have now created a tree with our root node, and 7 nodes in total.
+
+### Finding the height of our Tree
+
+Because of the way trees are set up, we will have to use `recursion` to find the height of our tree. We are going to add another method to our BinaryTree class, that will use recursion to return the larget height it could find in any of the branches.
+
+```csharp
+private int Height(TreeNode node)
+{
+    if (node == null)
+    {
+        // If the root node is null,
+        // Return 0
+        return 0;
+    }
+    else
+    // Otherwise our root node has children, and 
+    // then we can start to count the height.
+    {
+        int leftHeight = Height(node.Left);
+        int rightHeight = Height(node.Right);
+
+        // Return the largest height found + 1 for the root node.
+        return Math.Max(leftHeight, rightHeight) + 1;
+    }
+}
+```
+
+## Problem to Solve - File Structure
+
+You will be given a tree. Your task is to:
+
+* Print the data in every node by traversing the whole tree.
+* Find the height of the tree.
+* Manually add another node to the tree that will change the height of the tree.
+* Check your work by checking the height of the tree again.
+
+[Practice File](../datafinal\trees-problem\Program.cs)
+
+[Solution](../datafinal\trees-problem\Solution.cs)
+
+[Back to Welcome Page](Welcome.md)
