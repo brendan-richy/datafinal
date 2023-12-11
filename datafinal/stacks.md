@@ -138,8 +138,8 @@ Your task is to:
 * Then, use `.Count()` to well, obviously count the height of the stack. Print this, and make sure it matches the number of items you added to the stack -1.
 * Lastly, use `.Clear()` to empty the stack completly. Then check your work with `.Count()` again to make sure that it worked.
 
-[Practice File](../datafinal\stacks-solution\Program.cs)
+[Practice File](../datafinal\stacks-problem\Program.cs)
 
-[Solution](../datafinal\stacks-solution\Solution.cs)
+[Solution](../datafinal\stacks-problem\Solution.cs)
 
 [Back to Welcome Page](welcome.md)
