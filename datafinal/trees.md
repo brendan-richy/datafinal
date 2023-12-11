@@ -49,3 +49,65 @@ Even if a parent only has a single child node, `it will still follow the left ri
 * 65 is a single child of 60, and its larger so it will go to the right of the parent.
 
 ## Lets Make a Tree
+
+Making a tree takes a bit more work than our previous data structures. We will need to define the node structure, create the root node, insert children nodes, and learn how to traverse the tree.
+
+### TreeNode Class
+
+```csharp
+public class TreeNode
+{
+    public int Data;
+    public TreeNode Left;
+    public TreeNode Right;
+
+    public TreeNode(int data)
+    {
+        Data = data;
+        Left = null;
+        Right = null;
+    }
+}
+```
+
+This class represents a node in our system. Each node will contain `Data`, and each node will have 2 children available to have other nodes assigned to.
+
+### BinaryTree Class
+
+```csharp
+public class BinaryTree
+{
+    public TreeNode Root;
+
+    public BinaryTree()
+    {
+        Root = null;
+    }
+}
+```
+
+In this we have initiated our binary tree, and created our root node. Our root node is currently `null`, and we will assign data to it later.
+
+## Lets add some Nodes
+
+```csharp
+class Program
+{
+    static void Main()
+    {
+        // using our classes, create a binary tree
+        BinaryTree tree = new BinaryTree();
+        // Assign our root node some data
+        tree.Root = new TreeNode(10);
+        // Using Left - Right ordering, add child nodes manually
+        // Notice how you have to reference each parent node to 
+        // traverse to where you will add a child node.
+        tree.Root.Left = new TreeNode(5);
+        tree.Root.Right = new TreeNode(15);
+        tree.Root.Left.Left = new TreeNode(2);
+        tree.Root.Left.Right = new TreeNode(7);
+        tree.Root.Right.Left = new TreeNode(12);
+        tree.Root.Right.Right = new TreeNode(17);
+    }
+}
+```
