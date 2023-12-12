@@ -1,10 +1,10 @@
 # Binary Search Trees
 
-## What does hierarchical mean?
+## What does hierarchial mean?
 
 Much like an upside down tree, a binary search tree (BST) organizes data using roots and branches. A binary search tree is composed of nodes which each hold a piece of data. Nodes in a BST have parent child relationships. Every node in the tree will have a parent, except the root node. A node can have at most, 2 children.
 
-Lets look at an example of a tree.
+Lets look at an examle of a tree.
 
 ![Tree Overview](images/tree_overview.jpg)
 
@@ -45,6 +45,12 @@ When a child is `larger` than its parent it will go to the `right` of  the paren
 ### Other notes
 
 Even if a parent only has a single child node, `it will still follow the left right` rules.
+
+| Operation       | Description                                   | Efficiency       |
+|-----------------|-----------------------------------------------|-------------------|
+| Add Node        | Add a node               | O(log n) on average, O(n) worst case, where n is the number of nodes |
+| Get Height      | Find tree height         | O(n) |
+| Find Node       | Find a node              | O(log n) on average, O(n) worst case  of nodes |
 
 * 65 is a single child of 60, and its larger so it will go to the right of the parent.
 
@@ -116,7 +122,7 @@ We have now created a tree with our root node, and 7 nodes in total.
 
 ### Finding the height of our Tree
 
-Because of the way trees are set up, we will have to use `recursion` to find the height of our tree. We are going to add another method to our BinaryTree class, that will use recursion to return the target height it could find in any of the branches.
+Because of the way trees are set up, we will have to use `recursion` to find the height of our tree. We are going to add another method to our BinaryTree class, that will use recursion to return the larget height it could find in any of the branches.
 
 ```csharp
 private int Height(TreeNode node)
@@ -149,8 +155,8 @@ You will be given a tree. Your task is to:
 * Manually add another node to the tree that will change the height of the tree.
 * Check your work by checking the height of the tree again.
 
-[Practice File](https://github.com/brendan-richy/datafinal/blob/05426d414d33c6e0c6d1c2c2958c704513cd491a/csharp_fundamentals/trees-problem/Program.cs)
+[Practice File](../datafinal\trees-problem\Program.cs)
 
-[Solution](https://github.com/brendan-richy/datafinal/blob/42b5f503209fb25a680277b778eb761d77ffaf82/csharp_fundamentals/trees-problem/solution/solution.cs)
+[Solution](../datafinal\trees-problem\Solution.cs)
 
-[Back to Welcome Page](https://github.com/brendan-richy/datafinal/blob/0b6fc4e4a5dd979672c5ab81df98a07bf247403a/csharp_fundamentals/welcome.md)
+[Back to Welcome Page](Welcome.md)
