@@ -38,7 +38,7 @@ The intersection of set A and Set B only contains the element 3, because that is
 
 ### Symmetric Difference
 
-The symmetric difference, or "difference" of two sets generates a new set that contains elements that are unique to each set, but not those elements that are shared between two sets. Differences are very similar to a `Union` but with an added step that elements present in both sets A and B are not included in the difference.
+The symmetric difference, or "difference" of two sets generates a new set that contains elements that are unique to each set, but not those elements that are shared between two sets. Differences are very similair to a `Union` but with an added step that elements present in both sets A and B are not included in the difference.
 
 Differences can be expressed using the `Δ` character, between set A and set B.
 
@@ -48,7 +48,7 @@ Set B = {3, 4, 5}
 Symmetric Difference (A Δ B) = {1, 2, 4, 5}
 ```
 
-As you can see, this difference, does not contain the element 3. That's because it is present in both set A and B. All other elements in those sets are in the resulting difference, because they are unique to that set and not shared.
+As you can see, this difference, does not contain the element 3. Thats because it is present in both set A and B. All other elements in those sets are in the resulting difference, because they are unique to that set and not shared.
 
 ## Creating a Set
 
@@ -136,7 +136,7 @@ foreach (var item in setA)
 >>> S
 ```
 
-Just as a reminder, an intersection is the elements that are shared between two sets. After you find the intersection of two sets, the remaining set will be only shared elements between the sets.
+Just as a reminder, an intersection is the elements that are shared between two sets. After you find the intersection of two sets, the remaining set will be only shared elemets between the sets.
 
 ### Finding the difference
 
@@ -166,13 +166,21 @@ foreach (var item in setA)
 
 Notice that `S` is missing. That is because it is the shared element between the original setA and setB.
 
+### Efficiency of comparisons
+
+| Operation       | Description                                   | Efficiency       |
+|-----------------|-----------------------------------------------|-------------------|
+| Union           | Compare 2 sets, keep all, no duplicates    | O(m + n), where m and n are the sizes of the two sets |
+| Intersection    | Return elements shared in both sets        | O(min(m, n)), where m and n are the sizes of the two sets |
+| Difference      | Remove elements of one set from another       | O(m), where m is the size of the set being removed |
+
 ## Problem to Solve - find followers
 
 ### Social Media Use-Case
 
-On popular social platforms like instagram or facebook, it is a common feature to be able to view people that follow your accounts, accounts that you follow, and the accounts that other people follow. Basically, a list of followers/subscribers is stored with each user and there are separate pages for mutual followers, or lists of people that you both follow.
+On popular social platforms like instagram or facebook, it is a common feature to be able to view people that follow your accounts, accounts that you follow, and the accounts that other people follow. Basically, a list of followers/subscribers is stored with each user and there are seperate pages for mutual followes, or lists of people that you both follow.
 
-For this practice problem we will look at two separate users, and they people that they follow, as well as the people that follow them. Using set operations we will practice finding unions etc etc of these users.
+For this practice problem we will look at two seperate users, and they people that they follow, as well as the people that follow them. Using set operations we will practice finding unions etc etc of these users.
 
 ### Your task is to
 
@@ -182,8 +190,8 @@ Using the given sets of userA and user B
 * Find users that follow both userA and userB. These are called "mutual followers" and is also an intersection.
 * To practice finding a difference, although there is really no real world use case for followers, find people that follow userA or userB, but not both. You could think of these people as "possible interests" if userA and userB are similarly focused accounts.
 
-[Practice file](https://github.com/brendan-richy/datafinal/blob/0b6fc4e4a5dd979672c5ab81df98a07bf247403a/csharp_fundamentals/sets-problem/Program.cs)
+[Practice file](../datafinal\sets-problem\Program.cs)
 
-[Solution File](https://github.com/brendan-richy/datafinal/blob/cf06cb76360deac8bb0958233174b2fda54d4a51/csharp_fundamentals/sets-problem/solution/solution.cs)
+[Solution File](../datafinal\stacks-problem\solution\Solution.cs)
 
-[Back to Welcome Page](https://github.com/brendan-richy/datafinal/blob/0b6fc4e4a5dd979672c5ab81df98a07bf247403a/csharp_fundamentals/welcome.md)
+[Back to Welcome Page](welcome.md)
