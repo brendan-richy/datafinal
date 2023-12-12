@@ -1,10 +1,10 @@
 # Binary Search Trees
 
-## What does hierarchial mean?
+## What does hierarchical mean?
 
 Much like an upside down tree, a binary search tree (BST) organizes data using roots and branches. A binary search tree is composed of nodes which each hold a piece of data. Nodes in a BST have parent child relationships. Every node in the tree will have a parent, except the root node. A node can have at most, 2 children.
 
-Lets look at an examle of a tree.
+Lets look at an example of a tree.
 
 ![Tree Overview](images/tree_overview.jpg)
 
@@ -122,7 +122,7 @@ We have now created a tree with our root node, and 7 nodes in total.
 
 ### Finding the height of our Tree
 
-Because of the way trees are set up, we will have to use `recursion` to find the height of our tree. We are going to add another method to our BinaryTree class, that will use recursion to return the larget height it could find in any of the branches.
+Because of the way trees are set up, we will have to use `recursion` to find the height of our tree. We are going to add another method to our BinaryTree class, that will use recursion to return the target height it could find in any of the branches.
 
 ```csharp
 private int Height(TreeNode node)
@@ -155,8 +155,8 @@ You will be given a tree. Your task is to:
 * Manually add another node to the tree that will change the height of the tree.
 * Check your work by checking the height of the tree again.
 
-[Practice File](../datafinal\trees-problem\Program.cs)
+[Practice File](https://github.com/brendan-richy/datafinal/blob/05426d414d33c6e0c6d1c2c2958c704513cd491a/csharp_fundamentals/trees-problem/Program.cs)
 
-[Solution](../datafinal\trees-problem\Solution.cs)
+[Solution](https://github.com/brendan-richy/datafinal/blob/c620b80ece111a665f08478ac0f08726a822356e/csharp_fundamentals/trees-problem/solution/solution.cs)
 
-[Back to Welcome Page](Welcome.md)
+[Back to Welcome Page](https://github.com/brendan-richy/datafinal/blob/6a1fc7bebd1808d56a6126402b39d61b923cd0fb/csharp_fundamentals/welcome.md)
