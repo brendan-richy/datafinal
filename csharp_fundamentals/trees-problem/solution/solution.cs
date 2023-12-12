@@ -1,66 +1,124 @@
 using System;
 
-namespace solution{
+namespace solution
+{
     public class TreeNode
-{
-    // DONT CHANGE
-    public int Data;
-    public TreeNode? Left;
-    public TreeNode? Right;
-
-    public TreeNode(int data)
     {
-        Data = data;
-        Left = null;
-        Right = null;
-    }
-}
+        // DONT CHANGE
+        public int Data;
+        public TreeNode? Left;
+        public TreeNode? Right;
 
-public class BinaryTree
-{
-    // NO CHANGES til next commment
-    public TreeNode? Root;  // Nullable reference type
-
-    public BinaryTree()
-    {
-        Root = null;
-    }
-    // Follow instructions
-    public void PrintTree()
-    {
-        // TASK: Implement printing the data in every node by traversing the whole tree
+        public TreeNode(int data)
+        {
+            Data = data;
+            Left = null;
+            Right = null;
+        }
     }
 
-    public int Height()
+    public class BinaryTree
     {
-        // TASK: Implement finding the height of the tree
-        return 0; // Placeholder, replace with the actual height
+        // NO CHANGES til next commment
+        public TreeNode? Root;
+
+        public BinaryTree()
+        {
+            Root = null;
+        }
+
+        // Follow instructions
+        public void PrintTree()
+        {
+            Console.WriteLine("Printing Tree Data:");
+            PrintTree(Root);
+            Console.WriteLine();
+        }
+
+        private void PrintTree(TreeNode? node)
+        {
+            if (node != null)
+            {
+                PrintTree(node.Left);
+                Console.Write($"{node.Data} ");
+                PrintTree(node.Right);
+            }
+        }
+
+        public int Height()
+        {
+            return Height(Root);
+        }
+
+        private int Height(TreeNode? node)
+        {
+            if (node == null)
+            {
+                return 0;
+            }
+            else
+            {
+                int leftHeight = Height(node.Left);
+                int rightHeight = Height(node.Right);
+
+                return Math.Max(leftHeight, rightHeight) + 1;
+            }
+        }
+
+        public void AddNode(int data)
+        {
+            Root = AddNode(Root, data);
+        }
+
+        private TreeNode? AddNode(TreeNode? node, int data)
+        {
+            if (node == null)
+            {
+                return new TreeNode(data);
+            }
+            else
+            {
+                if (data < node.Data)
+                {
+                    node.Left = AddNode(node.Left, data);
+                }
+                else if (data > node.Data)
+                {
+                    node.Right = AddNode(node.Right, data);
+                }
+
+                return node;
+            }
+        }
     }
 
-    public void AddNode(int data)
+    class Program
     {
-        // TASK: Implement manually adding another node to the tree
-        // HINT: Check trees.md
+        static void Main()
+        {
+            // Create a binary tree DONT CHANGE
+            BinaryTree tree = new BinaryTree();
+            tree.Root = new TreeNode(10);
+            tree.Root.Left = new TreeNode(5);
+            tree.Root.Right = new TreeNode(15);
+            tree.Root.Left.Left = new TreeNode(2);
+            tree.Root.Left.Right = new TreeNode(7);
+            tree.Root.Right.Left = new TreeNode(12);
+            tree.Root.Right.Right = new TreeNode(17);
+
+            // TASK call methods to print initial tree data, the height of the tree
+            // add nodes, reprint tree, and recheck height.
+            tree.PrintTree();
+
+            int initialHeight = tree.Height();
+            Console.WriteLine($"Initial Height of the tree: {initialHeight}");
+
+            tree.AddNode(8);
+
+            tree.PrintTree();
+
+            int updatedHeight = tree.Height();
+            Console.WriteLine($"Updated Height of the tree: {updatedHeight}");
+        }
     }
-}
-
-class Program
-{
-    static void Main()
-    {
-        // Create a binary tree DONT CHANGE
-        BinaryTree tree = new BinaryTree();
-        tree.Root = new TreeNode(10);
-        tree.Root.Left = new TreeNode(5);
-        tree.Root.Right = new TreeNode(15);
-        tree.Root.Left.Left = new TreeNode(2);
-        tree.Root.Left.Right = new TreeNode(7);
-        tree.Root.Right.Left = new TreeNode(12);
-        tree.Root.Right.Right = new TreeNode(17);
-
-        // TODO: Call methods to print initial tree data, find the initial height, 
-        // manually add a node, print tree data after adding a node, and check the updated height
-    }
-}
-
 }
