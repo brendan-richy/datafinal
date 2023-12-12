@@ -48,9 +48,9 @@ Even if a parent only has a single child node, `it will still follow the left ri
 
 | Operation       | Description                                   | Efficiency       |
 |-----------------|-----------------------------------------------|-------------------|
-| Add Node        | Add a node               | O(log n) on average, O(n) worst case, where n is the number of nodes |
+| Add Node        | Add a node               | O(log n) on average, O(n) worst case, where n is the # of nodes |
 | Get Height      | Find tree height         | O(n) |
-| Find Node       | Find a node              | O(log n) on average, O(n) worst case  of nodes |
+| Find Node       | Find a node              | O(log n) on average, O(n) worst case |
 
 * 65 is a single child of 60, and its larger so it will go to the right of the parent.
 
