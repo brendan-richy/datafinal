@@ -149,8 +149,8 @@ You will be given a tree. Your task is to:
 * Manually add another node to the tree that will change the height of the tree.
 * Check your work by checking the height of the tree again.
 
-[Practice File](https://github.com/brendan-richy/datafinal/blob/0b6fc4e4a5dd979672c5ab81df98a07bf247403a/csharp_fundamentals/images/tree_ordering.jpg)
+[Practice File](https://github.com/brendan-richy/datafinal/blob/05426d414d33c6e0c6d1c2c2958c704513cd491a/csharp_fundamentals/trees-problem/Program.cs)
 
-[Solution](https://github.com/brendan-richy/datafinal/blob/0b6fc4e4a5dd979672c5ab81df98a07bf247403a/csharp_fundamentals/images/tree_overview.jpg)
+[Solution](https://github.com/brendan-richy/datafinal/blob/42b5f503209fb25a680277b778eb761d77ffaf82/csharp_fundamentals/trees-problem/solution/solution.cs)
 
-[Back to Welcome Page](welcome.md)
+[Back to Welcome Page](https://github.com/brendan-richy/datafinal/blob/0b6fc4e4a5dd979672c5ab81df98a07bf247403a/csharp_fundamentals/welcome.md)
