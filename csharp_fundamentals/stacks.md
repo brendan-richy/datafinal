@@ -60,7 +60,7 @@ myStack.Push('www.mail.google.com/emails/unread');
 myStack.Push('www.mail.google.com/emails/394850');
 ```
 
-What weve done here is create a stack with 3 objects in it. Remember, if we want to check what the stack contains we can only ever check the most recently added object. Think of it like a stack of milk crates. Whats inside each milk crate might be different, but if you want to access whats inside any of the crates besides the top one you need to take them off the stack.
+What we've done here is create a stack with 3 objects in it. Remember, if we want to check what the stack contains we can only ever check the most recently added object. Think of it like a stack of milk crates. Whats inside each milk crate might be different, but if you want to access whats inside any of the crates besides the top one you need to take them off the stack.
 
 For this specific example, you would want to create a stack so you could easily go back to your recent pages. At this point if we were viewing email `394850` and hit the back button, we would go back to viewing our unread emails.
 
@@ -128,7 +128,7 @@ Console.Writeline(count);
 
 ## Problem to Solve - Edit History
 
-Create and  manipulate a stack in a way that editing or content creation software might do with actions like ctrl+z in mind. Programs like photoshop, blender, or even visual studio code let you undo recent changes to whatever you are working on. These recent actions, or edits that you made are stored in a stack and then access when you decdide to undo your work or go back to an earlier point.
+Create and  manipulate a stack in a way that editing or content creation software might do with actions like ctrl+z in mind. Programs like photoshop, blender, or even visual studio code let you undo recent changes to whatever you are working on. These recent actions, or edits that you made are stored in a stack and then access when you decide to undo your work or go back to an earlier point.
 
 Your task is to:
 
@@ -136,7 +136,7 @@ Your task is to:
 * Use `.Peek()` to view the most recent action, store it in a variable and print it to console.
 * Use `.Pop()` to simulate using ctrl+z to undo your most recent action. Store this most recent action in a variable, and print it to console.
 * Then, use `.Count()` to well, obviously count the height of the stack. Print this, and make sure it matches the number of items you added to the stack -1.
-* Lastly, use `.Clear()` to empty the stack completly. Then check your work with `.Count()` again to make sure that it worked.
+* Lastly, use `.Clear()` to empty the stack completely. Then check your work with `.Count()` again to make sure that it worked.
 
 [Practice File](https://github.com/brendan-richy/datafinal/blob/0b6fc4e4a5dd979672c5ab81df98a07bf247403a/csharp_fundamentals/stacks-problem/Program.cs)
 
