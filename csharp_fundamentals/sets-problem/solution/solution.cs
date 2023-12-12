@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 // Ensure that each part of the class is marked as partial
-partial class Solution
+partial class setsolution
 {
     static void Start()
     {
