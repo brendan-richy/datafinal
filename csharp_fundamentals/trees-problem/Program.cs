@@ -4,8 +4,8 @@ public class TreeNode
 {
     // DONT CHANGE
     public int Data;
-    public TreeNode Left;
-    public TreeNode Right;
+    public TreeNode? Left;
+    public TreeNode? Right;
 
     public TreeNode(int data)
     {
@@ -18,7 +18,7 @@ public class TreeNode
 public class BinaryTree
 {
     // NO CHANGES til next commment
-    public TreeNode Root;
+    public TreeNode? Root;  // Nullable reference type
 
     public BinaryTree()
     {
@@ -47,7 +47,7 @@ class Program
 {
     static void Main()
     {
-        // Create a binary tree
+        // Create a binary tree DONT CHANGE
         BinaryTree tree = new BinaryTree();
         tree.Root = new TreeNode(10);
         tree.Root.Left = new TreeNode(5);
@@ -59,6 +59,5 @@ class Program
 
         // TODO: Call methods to print initial tree data, find the initial height, 
         // manually add a node, print tree data after adding a node, and check the updated height
-
     }
 }
